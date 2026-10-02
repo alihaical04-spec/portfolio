@@ -4,12 +4,30 @@
   --color-primary: #38bdf8;
   --color-primary-dark: #0ea5e9;
   --color-accent: #a78bfa;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* Dark theme (default) */
+html.dark,
+html:not(.light) {
   --color-bg: #0b0f19;
   --color-surface: #111827;
   --color-surface-2: #1f2937;
   --color-text: #e5e7eb;
   --color-muted: #9ca3af;
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --color-border: rgba(255, 255, 255, 0.05);
+  --color-card-hover: #151c2c;
+}
+
+/* Light theme */
+html.light {
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface-2: #f1f5f9;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-border: rgba(15, 23, 42, 0.08);
+  --color-card-hover: #f1f5f9;
 }
 
 html {
@@ -22,8 +40,29 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #root {
   min-height: 100vh;
+}
+
+/* Utility classes that respect theme */
+.bg-theme {
+  background-color: var(--color-bg);
+}
+.bg-surface {
+  background-color: var(--color-surface);
+}
+.bg-surface-2 {
+  background-color: var(--color-surface-2);
+}
+.text-theme {
+  color: var(--color-text);
+}
+.text-muted {
+  color: var(--color-muted);
+}
+.border-theme {
+  border-color: var(--color-border);
 }
