@@ -73,7 +73,7 @@ export const projects: Project[] = [
     id: 4,
     title: "TaskFlow — Kanban Task Manager",
     description:
-      "Production-style Kanban board with drag-and-drop, priority filters, search, dark mode, and localStorage persistence. Keyboard-friendly and fully responsive.",
+      "Production-style Kanban board with drag-and-drop, priority filters, search, keyboard shortcuts, ARIA live regions, export/import, dark mode, and localStorage persistence.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
     category: ["react", "typescript", "ui"],
     github: "https://github.com/alihaical04-spec/taskflow",
