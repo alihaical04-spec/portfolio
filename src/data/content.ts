@@ -71,14 +71,14 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Task Manager with Drag & Drop",
+    title: "TaskFlow — Kanban Task Manager",
     description:
-      "Interactive task board with drag-and-drop columns, filters, and local persistence. Built for smooth interactions and productivity workflows.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "dnd-kit"],
+      "Production-style Kanban board with drag-and-drop, priority filters, search, dark mode, and localStorage persistence. Keyboard-friendly and fully responsive.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
     category: ["react", "typescript", "ui"],
-    github: "https://github.com/alihaical04-spec",
+    github: "https://github.com/alihaical04-spec/taskflow",
     live: "#",
-    featured: false,
+    featured: true,
     year: 2026,
   },
   {
