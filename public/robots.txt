@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hikalwebsite.netlify.app/
+Sitemap: https://hikalwebsite.netlify.app/sitemap.xml
