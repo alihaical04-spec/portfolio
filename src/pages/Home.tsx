@@ -68,6 +68,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Quick stats */}
+      <section className="border-t border-theme px-4 py-10 sm:px-6" aria-label="Highlights">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 sm:grid-cols-4">
+          {[
+            { label: "Focus", value: "Frontend" },
+            { label: "Stack", value: "React + TS" },
+            { label: "Approach", value: "Vibe Coding" },
+            { label: "Status", value: "Open to work" },
+          ].map((s) => (
+            <div
+              key={s.label}
+              className="rounded-2xl border border-theme bg-surface px-4 py-5 text-center"
+            >
+              <p className="text-lg font-bold text-sky-500 sm:text-xl">{s.value}</p>
+              <p className="mt-1 text-xs text-muted">{s.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Featured Projects */}
       <section className="border-t border-theme px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-6xl">
