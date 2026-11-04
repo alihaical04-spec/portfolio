@@ -22,6 +22,7 @@ export default function Navbar() {
             <Link
               key={link.path}
               to={link.path}
+              aria-current={location.pathname === link.path ? "page" : undefined}
               className={`text-sm font-medium transition-colors ${
                 location.pathname === link.path
                   ? "text-sky-500"
