@@ -2,7 +2,7 @@
 
 Modern multi-page portfolio website for **Rahat Ali**, Frontend Web Developer.
 
-**Live Demo:** [https://hikalwebsite.netlify.app/](https://hikalwebsite.netlify.app/)
+**Live Demo:** [https://haicalwebsite.netlify.app/](https://haicalwebsite.netlify.app/)
 
 ## ✨ Features
 
